@@ -1,1 +1,1 @@
-# GitHub Bağlantısı Başarılı.
+# GitHub Bağlantısı Başarılı Görünüyor
