@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Kelime Sayısını Bulma</title>    
+</head>
+<body>
+    <script>
+        let metin = "Kargom Dağıtıma Çıkmış Durumda";
+        let sayac = 0;
+        let harf = prompt("Bir Harf Giriniz: ")
+
+        for(i=0; i<metin.length; i++){
+            if(metin.charAt(i).toLowerCase() === harf.toLocaleLowerCase()){
+                sayac++;
+            }
+        }
+        alert("Cümle İçerisinde " + sayac + " adet a harfi vardır.")
+    </script>
+</body>
+</html>

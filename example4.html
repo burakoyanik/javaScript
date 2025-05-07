@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Mükemmel Sayı Bulma Uygulaması</title>    
+</head>
+<body>
+    <script>
+        /* 
+            sayının kendini tam olarak bölen sayıların toplamı, sayının 2 katına eşitse bu sayıya mükemmel sayı denir
+        */
+
+        function perfectNumber(number){
+            let toplam = 0;
+            for(i=1; i<=number/2; i++){
+                if(number%i == 0){
+                    toplam += i;
+                }
+
+                if(toplam == number){
+                    console.log(number + " Sayısı Mükemmel Sayıdır.");
+                }
+            }            
+        }
+
+        for(a=1; a<=500; a++){
+            number = a;
+            perfectNumber(number);
+        }
+    </script>
+</body>
+</html>

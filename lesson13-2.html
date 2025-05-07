@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript METOTLAR - Değer Döndüren Metot</title>    
+</head>
+<body>
+    <script>
+
+        /*        
+            metot içerisinde returnden sonraki kodlar çalıştırılmaz.
+            void=geriye değer döndürmeyen,
+            
+        */
+
+        function writer(parametre1, parametre2){
+            sonuc = parametre1 + parametre2;
+            return sonuc;
+        }
+
+        let cikti = writer("Java", "Script");
+        console.log(cikti);
+       
+    </script>
+</body>
+</html>

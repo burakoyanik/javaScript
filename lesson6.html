@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Diyalog Kutuları</title>    
+</head>
+<body>
+    <script>
+        /* 
+        ---  DİYALOG KUTULARI  ---
+        - Alert
+        - Prompt
+        - Confirm
+
+
+        */
+        userData = prompt('Prompt Giriniz');
+        
+
+        userChose = confirm('Değişken İçindeki Veriyi Silmek İster Misiniz?');
+
+        if(userChose == true){
+            userData = "";
+        }
+        
+        alert("Prompt kutusunden gelen veri alert kutusunda bu şekilde: " + userData);
+
+    </script>
+</body>
+</html>

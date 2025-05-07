@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Armstrong Sayılarını Bulma</title>    
+</head>
+<body>
+    <script>
+
+        /*
+        Bir Sayının Rakamlarının Küplerinin Toplamı Aynı Sayıyı Veriyor Mu?
+        */
+        let sayi = 0;
+
+        for(sayi = 0; sayi<=1000; sayi++){
+            let toplam = 0;
+            for(i = 0; i < sayi.toString().length; i++){
+                let rakam = sayi.toString().charAt(i);
+                toplam+= rakam*rakam*rakam;
+            }
+            
+            if(sayi==toplam){
+                console.log("Armstrong Sayısı: " + sayi);
+            }
+        }
+    </script>
+</body>
+</html>

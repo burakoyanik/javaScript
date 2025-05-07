@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Decimal to Binary Uygulaması</title>    
+</head>
+<body>
+    <script>
+        /* 
+            bir sayının 2 ile bölümünden kalan tüm sayıların sondan ilke doğru sıralaması binary dönüşümüdür.
+        */
+        let number=prompt("Binary Dönüşümü Yapılacak Sayıyı Giriniz: ");
+        binaryConvert(number);
+
+        function binaryConvert(){
+            let result="";
+            while(true){
+                result+=(number%2).toString();
+                number=Math.floor(number/2);
+                if( number==1){
+                    result+=1;
+                    break;
+                }
+            }
+            let lastResult = reverse(result);
+            alert("Sonuç: " + lastResult);
+        }
+
+        function reverse(result){
+            let reverseBinary="";
+            for(let i = result.length-1; i>=0; i--){
+                reverseBinary+=result.charAt(i);
+            }
+            return reverseBinary;
+        }
+    </script>
+</body>
+</html>

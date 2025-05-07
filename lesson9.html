@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tür Dönüşümleri</title>    
+</head>
+<body>
+    <script>
+        /*
+        string, number, boolean, undefined, null --ilkel veri tipleri
+        object function --gelişmiş veri tipleri
+        */
+
+        let a = 5;
+        let b = "15.5";
+
+        let c = Number(b); // b string verisini number veri tipine çevirir.
+
+        console.log(typeof b);
+        console.log(b);
+        console.log(typeof c);
+        console.log(c);
+
+        let aa = 5;
+        let bb = "15.5";
+
+        let cc = parseInt(bb);
+        
+        console.log(typeof bb);
+        console.log(bb);
+        console.log(typeof cc);
+        console.log(cc);
+
+        let aaa = 5;
+        let bbb = "15.5";
+
+        let ccc = parseFloat(bbb);
+
+        console.log(typeof bbb);
+        console.log(bbb);
+        console.log(typeof ccc);
+        console.log(ccc);
+
+
+        //---------------------------------------------------
+
+        let x = 55;
+        let xx = String(x);
+        console.log(typeof xx);
+        console.log(xx);
+
+
+        //---------------------------------------------------
+        let dizi = [1,2,3,4,5,6,7,8,9,0];
+        let stringDizi = String(dizi);
+        console.log(typeof stringDizi);
+        console.log(stringDizi);        
+
+
+
+    </script>
+</body>
+</html>

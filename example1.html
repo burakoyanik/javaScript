@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sınav Ortalaması</title>    
+</head>
+<body>
+    <script>
+        let vize1 = Number(prompt("1. Vize Notunu Giriniz:"))
+        let vize2 = Number(prompt("2. Vize Notunu Giriniz:"))
+        let final = Number(prompt("Final Notunu Giriniz:"))
+
+        vize1 *= 0.3;
+        vize2 *= 0.3;
+        final *= 0.4;
+
+        let ortalama = vize1 + vize2 + final;
+
+        if(ortalama >= 45 && final/4*10 >= 45){
+            alert("Dersi " + ortalama + " ile geçtiniz")
+        }
+        else if(final/4*10<45){
+            alert("Dersten final notunuz " + final/4*10 + " olduğu için kaldınız")
+        }
+        else{
+            alert("Dersten " + ortalama + " ile kaldınız")
+        }
+
+    </script>
+</body>
+</html>
